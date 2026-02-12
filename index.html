@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Royal Watch Ranking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Royal Watch Ranking</h1>
+        <p class="subtitle">Elige el mejor reloj en cada enfrentamiento</p>
+
+        <div class="comparison">
+            <div class="watch-card" id="watchA" onclick="vote(0)">
+                <h2 id="nameA"></h2>
+                <p id="descA"></p>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="watch-card" id="watchB" onclick="vote(1)">
+                <h2 id="nameB"></h2>
+                <p id="descB"></p>
+            </div>
+        </div>
+
+        <button onclick="showRanking()">Ver Ranking</button>
+
+        <div id="ranking" class="ranking"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
