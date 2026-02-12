@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Royal Watch Ranking</title>
+
+    <!-- Fuente elegante latina -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Fuente árabe decorativa -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Decoraciones laterales árabes -->
+    <div class="arabic-left">الفخامة · الذهب · الزمن</div>
+    <div class="arabic-right">القوة · الأناقة · الدقة</div>
 
     <div class="container">
         <h1>Royal Watch Ranking</h1>
         <p class="subtitle">Elige el mejor reloj en cada enfrentamiento</p>
 
         <div class="comparison">
-            <div class="watch-card" id="watchA" onclick="vote(0)">
+            <div class="watch-card" onclick="vote(0)">
                 <h2 id="nameA"></h2>
                 <p id="descA"></p>
             </div>
 
             <div class="vs">VS</div>
 
-            <div class="watch-card" id="watchB" onclick="vote(1)">
+            <div class="watch-card" onclick="vote(1)">
                 <h2 id="nameB"></h2>
                 <p id="descB"></p>
             </div>
         </div>
 
-        <button onclick="showRanking()">Ver Ranking</button>
+        <button onclick="showRanking()">Ver Ranking Imperial</button>
 
         <div id="ranking" class="ranking"></div>
     </div>
